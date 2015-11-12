@@ -1,0 +1,22 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="configureable-element">
+    <template>
+        <div>
+            This is {{owner}}'s configureable element.
+        </div>
+    </template>
+
+    <script>
+        Polymer({
+            is: "configureable-element",
+            properties: {
+                owner: {
+                    type: String,
+                    value: "Vandosant"
+                }
+            }
+        })
+    </script>
+
+</dom-module>
