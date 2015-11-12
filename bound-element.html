@@ -1,0 +1,16 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="bound-element">
+    <template>
+        <div>This is {{owner}}'s element.</div>
+    </template>
+
+    <script>
+        Polymer({
+            is: "bound-element",
+            ready: function () {
+                this.owner = "Vandosant";
+            }
+        })
+    </script>
+</dom-module>
