@@ -1,0 +1,22 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="composed-element">
+    <template>
+        <style>
+            div {
+                display: inline-block;
+                background-color: #ccc;
+                padding: 4px;
+            }
+        </style>
+        <div>
+            <content></content>
+        </div>
+    </template>
+
+    <script>
+        Polymer({
+            is: "composed-element"
+        })
+    </script>
+</dom-module>
