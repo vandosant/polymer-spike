@@ -1,0 +1,22 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-input/paper-input.html">
+
+<dom-module id="two-way-binding-el">
+    <template>
+        <paper-input bind-value="{{owner}}" label="This is {{owner}}'s editable element."
+                     placeholder="Your name here"></paper-input>
+    </template>
+
+    <script>
+        'use strict';
+        Polymer({
+            is: "two-way-binding-el",
+            properties: {
+                owner: {
+                    type: String,
+                    value: "Vandosant"
+                }
+            }
+        })
+    </script>
+</dom-module>
